@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 215 16% 10%;      /* #15181d machined dark base */
+  --foreground: 210 14% 93%;      /* #eaedf0 crisp steel text */
+  --primary: 190 90% 48%;         /* #0cbde8 cold cyan */
+  --primary-foreground: 215 18% 8%; /* #111418 */
+  --muted-foreground: 212 8% 55%; /* #7a889b */
+  --border: 215 12% 20%;          /* #2d333b */
+  --card: 215 14% 13%;            /* #1c2026 */
+  --card-elevated: 215 12% 17%;   /* #232830 */
+  --spec: 45 92% 58%;             /* #f5b922 tolerance highlight amber */
+}
+
+@layer base {
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Barlow', system-ui, sans-serif;
+    font-weight: 500;
+    line-height: 1.68;
+    @apply antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow', system-ui, sans-serif;
+    color: hsl(var(--foreground));
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer components {
+  /* Precision Industrial CTA Button (Cold Cyan) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center font-sans font-semibold text-xs tracking-wider uppercase bg-[#0cbde8] text-[#111418] px-5 py-2.5 rounded-sm hover:bg-[#0aa1c6] transition-colors focus:outline-none focus:ring-1 focus:ring-[#0cbde8];
+  }
+
+  /* Secondary Machined Steel Button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center font-mono font-medium text-xs tracking-wider uppercase bg-[#232830] text-[#eaedf0] border border-[#2d333b] px-5 py-2.5 rounded-sm hover:border-[#0cbde8] hover:text-[#0cbde8] transition-all focus:outline-none;
+  }
+
+  /* Precision Surface Card */
+  .card {
+    @apply bg-[#1c2026] border border-[#2d333b] rounded-sm p-6 text-[#eaedf0] transition-colors hover:border-[#475363];
+  }
+
+  /* Form Input */
+  .input-field {
+    @apply w-full px-3.5 py-2.5 bg-[#15181d] border border-[#2d333b] rounded-sm text-[#eaedf0] font-mono text-sm placeholder-[#7a889b] focus:outline-none focus:border-[#0cbde8] focus:ring-1 focus:ring-[#0cbde8] transition-colors;
+  }
+
+  /* Technical Mono Eyebrow */
+  .eyebrow {
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-[#0cbde8];
+  }
+
+  /* Spec / Metric Value */
+  .metric-value {
+    @apply font-sans font-bold tabular-nums text-[#0cbde8];
+  }
+}
