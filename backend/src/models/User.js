@@ -67,7 +67,7 @@ const userSchema = new mongoose.Schema(
   },
   {
     timestamps: true, // Adds createdAt and updatedAt automatically
-  }
+  },
 );
 
 // Index for faster email lookups

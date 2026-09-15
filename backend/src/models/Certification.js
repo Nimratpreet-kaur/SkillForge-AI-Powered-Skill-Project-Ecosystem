@@ -26,7 +26,7 @@ const certificationSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 module.exports = mongoose.model('Certification', certificationSchema);

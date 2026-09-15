@@ -15,7 +15,7 @@
  *   - express-validator: https://express-validator.github.io/
  */
 
-const validateBody = (schema) => {
+const validateBody = (_schema) => {
   return (req, res, next) => {
     // TODO: Validate req.body against the provided schema
     // If valid: call next()
@@ -24,14 +24,14 @@ const validateBody = (schema) => {
   };
 };
 
-const validateParams = (schema) => {
+const validateParams = (_schema) => {
   return (req, res, next) => {
     // TODO: Validate req.params against the provided schema
     next();
   };
 };
 
-const validateQuery = (schema) => {
+const validateQuery = (_schema) => {
   return (req, res, next) => {
     // TODO: Validate req.query against the provided schema
     next();

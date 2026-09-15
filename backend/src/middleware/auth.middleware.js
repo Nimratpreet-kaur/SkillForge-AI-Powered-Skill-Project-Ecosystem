@@ -31,7 +31,7 @@ const protect = async (req, res, next) => {
   next();
 };
 
-const authorize = (...roles) => {
+const authorize = (..._roles) => {
   return (req, res, next) => {
     // TODO: Check if req.user.role is in allowed roles
     console.warn('⚠️  Authorization not implemented — passing through');

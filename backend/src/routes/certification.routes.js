@@ -15,7 +15,7 @@
 
 const express = require('express');
 const router = express.Router();
-const certificationController = require('../controllers/certification.controller');
+// const certificationController = require('../controllers/certification.controller');
 
 // TODO: Implement certification routes
 // router.get('/user/:userId', certificationController.getUserCertifications);

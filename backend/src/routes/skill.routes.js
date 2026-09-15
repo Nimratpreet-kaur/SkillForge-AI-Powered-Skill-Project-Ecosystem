@@ -15,7 +15,7 @@
 
 const express = require('express');
 const router = express.Router();
-const skillController = require('../controllers/skill.controller');
+// const skillController = require('../controllers/skill.controller');
 
 // TODO: Implement skill routes
 // router.get('/user/:userId', skillController.getUserSkills);

@@ -17,7 +17,7 @@
 
 const express = require('express');
 const router = express.Router();
-const githubController = require('../controllers/github.controller');
+// const githubController = require('../controllers/github.controller');
 
 // TODO: Implement GitHub routes
 // router.get('/repos/:username', authMiddleware, githubController.getUserRepos);

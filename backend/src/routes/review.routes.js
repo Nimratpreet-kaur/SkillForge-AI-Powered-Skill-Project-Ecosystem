@@ -15,7 +15,7 @@
 
 const express = require('express');
 const router = express.Router();
-const reviewController = require('../controllers/review.controller');
+// const reviewController = require('../controllers/review.controller');
 
 // TODO: Implement review routes
 // router.get('/project/:projectId', reviewController.getProjectReviews);

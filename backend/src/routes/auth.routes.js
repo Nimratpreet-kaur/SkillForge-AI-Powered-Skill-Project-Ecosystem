@@ -14,7 +14,7 @@
 
 const express = require('express');
 const router = express.Router();
-const authController = require('../controllers/auth.controller');
+// const authController = require('../controllers/auth.controller');
 
 // TODO: Implement authentication routes
 // router.post('/register', authController.register);

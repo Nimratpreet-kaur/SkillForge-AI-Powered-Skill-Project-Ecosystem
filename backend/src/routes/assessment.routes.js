@@ -15,7 +15,7 @@
 
 const express = require('express');
 const router = express.Router();
-const assessmentController = require('../controllers/assessment.controller');
+// const assessmentController = require('../controllers/assessment.controller');
 
 // TODO: Implement assessment routes
 // router.get('/', assessmentController.getAllAssessments);
